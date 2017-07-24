@@ -5,6 +5,15 @@
 		<title>
 		</title>
 		<script>
+			function NumbersOnly(arr){
+				for(i = 0; i < arr.length ; i += 1){
+					if(typeof arr[i] !=== 'number'){
+						arr.pop(i)
+					}
+				}
+			}
+
+			console.log(NumbersOnly([1, "apple", -3, "orange", 0.5])) // testing results/
 		</script>
 	</head>
 	<body>
